@@ -16,9 +16,10 @@ Learn systems by designing, scaling, and breaking them on purpose.
 - Versions are git tags (`shortener-v0`, `shortener-v1`...), NOT subfolders. One PR per version, reviewed on GitHub.
 
 ## Systems
-| # | System | Status | Current break to chase | Blog link |
-|---|--------|--------|------------------------|-----------|
-| 01 | url-shortener | v0 queued — QA next | v0: restart loss + races | — |
+| # | System | Folder | Status | Current break to chase | Tags | Blog |
+|---|--------|--------|--------|------------------------|------|------|
+| 00 | Template (copy me) | [00-template-project](./00-template-project/) | stable | — | — | — |
+| 01 | URL Shortener | [01-url-shortener](./01-url-shortener/) | v0 queued — QA next | v0: restart loss + races | `shortener-v0` queued | — (add portfolio `/blog/...` link when published) |
 
 ## Per-version loop (same every time)
 1. QA grill → ADR
