@@ -1,0 +1,38 @@
+# Node / Python / k6 / Docker / OS — root covers all systems.
+# Per-folder .gitignore NOT needed. Nested gitignores stack on top of this,
+# so only add one inside NN-name/ if that system needs an exception.
+
+# Deps
+node_modules/
+__pycache__/
+.venv/
+venv/
+*.pyc
+
+# Env / secrets (never commit)
+.env
+.env.*
+!.env.example
+
+# Logs / results
+*.log
+logs/
+load/results/
+*.har
+
+# Build / data
+dist/
+build/
+*.db
+*.sqlite
+*.rdb
+data/
+
+# Docker
+.docker/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+*.swp
