@@ -20,6 +20,13 @@ Learn systems by designing, scaling, and breaking them on purpose.
 |---|--------|--------|--------|------------------------|------|------|
 | 00 | Template (copy me) | [00-template-project](./00-template-project/) | stable | — | — | — |
 | 01 | URL Shortener | [01-url-shortener](./01-url-shortener/) | v0 queued — QA next | v0: restart loss + races | `shortener-v0` queued | — (add portfolio `/blog/...` link when published) |
+| 02 | Rate Limiter | [02-rate-limiter](./02-rate-limiter/) | planned | v0: 2x burst at window edge + restart loss | — | — |
+| 03 | Job Queue | [03-job-queue](./03-job-queue/) | planned | v0: crash loses queued jobs | — | — |
+| 04 | Realtime Chat | [04-realtime-chat](./04-realtime-chat/) | planned | v0: restart loss + slow client stalls a room | — | — |
+| 05 | Auth Proxy | [05-auth-proxy](./05-auth-proxy/) | planned, needs 02 | v0: no revocation, key rotation logs everyone out | — | — |
+| 06 | Mini Search Engine | [06-mini-search](./06-mini-search/) | planned | v0: index rebuilt on restart, memory grows with corpus | — | — |
+
+Order after 01 is a suggestion. 05 v3 and 04 v3 reuse the 02 limiter, so do 02 before them.
 
 ## Per-version loop (same every time)
 1. QA grill → ADR
